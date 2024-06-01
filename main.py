@@ -1,4 +1,5 @@
 import cv2
+import streamlit as st
 
 def prendre_photo(nom_fichier):
     # Ouvrir la webcam (0 est l'ID par défaut de la webcam)
@@ -25,3 +26,4 @@ def prendre_photo(nom_fichier):
 
 # Exemple d'utilisation de la fonction
 prendre_photo('photo.jpg')
+st.image("photo.jpg")
